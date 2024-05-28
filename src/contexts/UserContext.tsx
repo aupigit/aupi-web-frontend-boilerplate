@@ -40,7 +40,7 @@ const UserProvider: React.FC<UserContextProps> = ({ children }) => {
         const response = await findUser(userId, token)
         return response
       } else {
-        // router.push('/login')
+        router.push('/login')
         return null
       }
     },
