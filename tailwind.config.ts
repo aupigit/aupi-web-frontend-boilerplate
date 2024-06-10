@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 const config = {
   darkMode: ['class'],
@@ -34,16 +35,19 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
+        // primary: {
+        //   DEFAULT: "hsl(var(--primary))",
+        //   foreground: "hsl(var(--primary-foreground))",
+        // },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
@@ -73,12 +77,14 @@ const config = {
         white: '#FFFFFF',
         black: '#121723',
         dark: '#1D2430',
+        primary: '#ec681b',
         yellow: '#FBB040',
         math: '#3b82f6',
         art: '#a855f7',
         science: '#10b981',
         history: '#facc15',
         portuguese: '#dc2626',
+        english: '#d946ef',
         'body-color': '#788293',
         'body-color-dark': '#959CB1',
         'gray-dark': '#1E232E',
