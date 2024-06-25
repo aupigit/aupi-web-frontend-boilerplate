@@ -1,13 +1,13 @@
-import LoginForm from './LoginForm'
+import ForgotPasswordLoginForm from './ForgotPasswordLogin/ForgotPasswordLogin'
 
-const LoginPage = () => {
+const ForgotPasswordLoginPage = () => {
   return (
     <>
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[500px] rounded bg-white px-6 py-10 shadow-three dark:bg-black sm:p-[60px]">
+              <div className="mx-auto max-w-[500px] rounded bg-white px-6 py-10 shadow-three dark:bg-dark sm:p-[60px]">
                 {/* <Image
                   src={Logo}
                   alt="logo"
@@ -16,12 +16,12 @@ const LoginPage = () => {
                   height={991}
                 /> */}
                 <h3 className="mb-3 mt-5 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
-                  Entre com sua conta
+                  Esqueceu sua senha?
                 </h3>
                 <p className="mb-5 text-center text-base font-medium text-body-color">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
                 </p>
-                <LoginForm data-testid="LoginForm" />
+                <ForgotPasswordLoginForm data-testid="ForgotPasswordForm" />
               </div>
             </div>
           </div>
@@ -43,7 +43,7 @@ const LoginPage = () => {
               width="1440"
               height="969"
             >
-              <rect width="1440" height="969" fill="#090E34" />
+              <rect width="1440" height="969" fill="#ffd90a" />
             </mask>
             <g mask="url(#mask0_95:1005)">
               <path
@@ -66,8 +66,8 @@ const LoginPage = () => {
                 y2="453.581"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#004bb0" />
-                <stop offset="1" stopColor="#004bb0" stopOpacity="0" />
+                <stop stopColor="#ffd90a" />
+                <stop offset="1" stopColor="#ffd90a" stopOpacity="0" />
               </linearGradient>
               <linearGradient
                 id="paint1_linear_95:1005"
@@ -77,8 +77,8 @@ const LoginPage = () => {
                 y2="1192.04"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#004bb0" />
-                <stop offset="1" stopColor="#004bb0" stopOpacity="0" />
+                <stop stopColor="#ffd90a" />
+                <stop offset="1" stopColor="#ffd90a" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -88,4 +88,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default ForgotPasswordLoginPage

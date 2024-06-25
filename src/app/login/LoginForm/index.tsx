@@ -62,7 +62,10 @@ function LoginForm() {
   return (
     <form onSubmit={onSubmit}>
       <div className="mb-8">
-        <Label className="mb-3 block text-sm text-dark dark:text-white">
+        <Label
+          htmlFor="email"
+          className="mb-3 block text-sm text-dark dark:text-white"
+        >
           E-mail
         </Label>
         <Input
@@ -94,6 +97,7 @@ function LoginForm() {
           <div className="absolute inset-y-0 right-4 flex items-center">
             <button
               type="button"
+              data-testid="toggle-visibility"
               onClick={() => setShowPassword(!showPassword)}
               className="text-gray-500 focus:outline-none"
             >
@@ -123,7 +127,7 @@ function LoginForm() {
       <div className="mb-8 flex flex-col justify-between sm:flex-row sm:items-center">
         <div>
           <a
-            href="/forgot-password"
+            href="/login/forgot-password"
             className="text-sm font-medium text-primary hover:underline"
           >
             Esqueceu sua senha?
@@ -132,6 +136,8 @@ function LoginForm() {
       </div>
       <div className="mb-6">
         <LoadingButton
+          data-testid="submit-button"
+          label="Entrar"
           isLoading={isLoading}
           className="flex h-[50px] w-full items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit transition-colors duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
         />

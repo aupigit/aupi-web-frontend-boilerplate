@@ -4,17 +4,24 @@ import { Button } from '../ui/button'
 interface LoadingButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean
+  label?: string
 }
 
 const LoadingButton: React.FC<LoadingButtonProps> = ({
   className,
   isLoading,
+  label,
   ...props
 }) => {
   return (
     <>
       {isLoading ? (
-        <Button className={className} {...props} disabled>
+        <Button
+          data-testid="ButtonIsLoading"
+          className={className}
+          {...props}
+          disabled
+        >
           <div role="status">
             <svg
               aria-hidden="true"
@@ -37,7 +44,7 @@ const LoadingButton: React.FC<LoadingButtonProps> = ({
         </Button>
       ) : (
         <Button className={className} {...props}>
-          Entrar
+          {label}
         </Button>
       )}
     </>

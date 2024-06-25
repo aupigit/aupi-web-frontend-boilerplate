@@ -77,7 +77,7 @@ const config = {
         white: '#FFFFFF',
         black: '#121723',
         dark: '#1D2430',
-        primary: '#ec681b',
+        primary: '#5178bd',
         yellow: '#FBB040',
         math: '#3b82f6',
         art: '#a855f7',
