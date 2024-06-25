@@ -88,10 +88,11 @@ function ForgotPasswordLoginForm() {
       <div className="mb-6">
         <LoadingButton
           data-testid="submit-button"
-          label="Enviar e-mail"
           isLoading={isLoading}
           className="flex h-[50px] w-full items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit transition-colors duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
-        />
+        >
+          Enviar e-mail
+        </LoadingButton>
       </div>
     </form>
   )

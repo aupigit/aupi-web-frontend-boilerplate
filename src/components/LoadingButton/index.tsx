@@ -4,13 +4,13 @@ import { Button } from '../ui/button'
 interface LoadingButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   isLoading?: boolean
-  label?: string
+  children: React.ReactNode
 }
 
 const LoadingButton: React.FC<LoadingButtonProps> = ({
   className,
   isLoading,
-  label,
+  children,
   ...props
 }) => {
   return (
@@ -44,7 +44,7 @@ const LoadingButton: React.FC<LoadingButtonProps> = ({
         </Button>
       ) : (
         <Button className={className} {...props}>
-          {label}
+          {children}
         </Button>
       )}
     </>
