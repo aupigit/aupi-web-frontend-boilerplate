@@ -1,3 +1,5 @@
+<h1 align="center">Template do Frontend da Empresa Aupi Soluções em TI</h1>
+
 <p align="center" display="inline-block">
   <img src="https://img.shields.io/github/contributors/aupigit/aupi-web-frontend-boilerplate?style=for-the-badge"/>
   <img src="https://img.shields.io/github/issues/aupigit/aupi-web-frontend-boilerplate?style=for-the-badge"/>
@@ -6,8 +8,6 @@
   <img src="https://img.shields.io/github/license/aupigit/aupi-web-frontend-boilerplate?style=for-the-badge"/>
   <img src="https://img.shields.io/github/languages/top/aupigit/aupi-web-frontend-boilerplate?style=for-the-badge&logo=typescript"/>
 </p>
-
-<h1 align="center">Template do Frontend da Empresa Aupi Soluções em TI</h1>
 
 <div align="center"> 
   <img src="./src/public/aupi_logo.jpeg">
