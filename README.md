@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/github/languages/top/aupigit/aupi-web-frontend-boilerplate?style=for-the-badge&logo=typescript"/>
 </p>
 
-<h1 align="center">Projeto de Frontend da Empresa Aupi Soluções em TI</h1>
+<h1 align="center">Template do Frontend da Empresa Aupi Soluções em TI</h1>
 
 <div align="center"> 
   <img src="./src/public/aupi_logo.jpeg">
